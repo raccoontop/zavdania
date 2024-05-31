@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const action = this.getAttribute('data-action');
 
             if (!isNaN(action) || action === '.') {
-                // Запобігти повторній вставці десяткової крапки
                 if (action === '.' && currentInput.includes('.')) return;
                 currentInput += action;
                 updateDisplay(currentInput);
